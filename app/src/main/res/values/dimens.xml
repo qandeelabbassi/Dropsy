@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="drop_down_elevation">0dp</dimen>
+</resources>

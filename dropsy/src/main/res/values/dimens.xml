@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dropsy_white_space_margin">10dp</dimen>
+    <dimen name="dropsy_white_space_margin_2x">20dp</dimen>
+    <dimen name="dropsy_dropdown_corner_radius">8dp</dimen>
+    <dimen name="dropsy_dropdown_padding">12dp</dimen>
+    <dimen name="dropsy_dropdown_stroke_width">2dp</dimen>
+</resources>

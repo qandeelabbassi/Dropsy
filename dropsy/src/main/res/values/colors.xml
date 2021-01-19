@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dropsy_black">#000000</color>
+    <color name="dropsy_white">#ffffff</color>
+    <color name="dropsy_light_gray">#F2F2F7</color>
+    <color name="dropsy_medium_gray">#8E8E93</color>
+    <color name="dropsy_dark_gray">#6C6C6C</color>
+
+    <color name="dropsy_ripple_color">#20000000</color>
+    <color name="dropsy_text_color">@color/dropsy_black</color>
+    <color name="dropsy_text_color_secondary">@color/dropsy_medium_gray</color>
+    <color name="dropsy_text_color_secondary_dark">@color/dropsy_dark_gray</color>
+    <color name="dropsy_stroke_color">#D1D1D6</color>
+</resources>

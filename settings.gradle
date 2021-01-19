@@ -1,0 +1,3 @@
+include ':dropsy'
+include ':app'
+rootProject.name = "Dropsy"

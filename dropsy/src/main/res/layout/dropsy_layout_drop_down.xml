@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.qandeelabbassi.dropsy.CustomTextView
+        android:id="@+id/txt_drop_drown_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dropsy_white_space_margin"
+        android:textColor="@color/dropsy_text_color_secondary"
+        android:textSize="16sp"
+        custom:dropsyFontType="roboto_regular" />
+
+    <com.qandeelabbassi.dropsy.CustomTextView
+        android:id="@+id/txt_drop_drown_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dropsy_white_space_margin_2x"
+        android:layout_weight="1"
+        android:textColor="@color/dropsy_text_color"
+        android:textSize="16sp"
+        custom:dropsyFontType="roboto_bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dropsy_ic_expand"
+        custom:tint="@color/dropsy_black" />
+</LinearLayout>

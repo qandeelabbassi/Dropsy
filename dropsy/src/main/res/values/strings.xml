@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="dropsy_dropdown_items">
+        <item>Apple</item>
+        <item>Mango</item>
+        <item>Orange</item>
+        <item>Banana</item>
+        <item>Pineapple</item>
+    </string-array>
+</resources>

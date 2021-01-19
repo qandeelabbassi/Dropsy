@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dropsy</string>
+    <string name="dropdown_label">Fruit:</string>
+    <string-array name="dropdown_items">
+        <item>Apple</item>
+        <item>Mango</item>
+        <item>Orange</item>
+        <item>Banana</item>
+        <item>Pineapple</item>
+    </string-array>
+</resources>
