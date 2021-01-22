@@ -1,11 +1,20 @@
-<img width="45" height="45" src="./app/src/main/ic_launcher-playstore.png" alt="icon">
+<p align="center">
+<img align="center" width="50" height="50" src="./app/src/main/ic_launcher-playstore.png" alt="icon">
+</p>
 
-# Dropsy [![](https://jitpack.io/v/qandeelabbassi/Dropsy.svg)](https://jitpack.io/#qandeelabbassi/Dropsy)
-Simple dropdown/spinner view for Android.
+<h1 align="center">DROPSY</h1>
+<p align="center">
+Simple dropdown/spinner view for Android
+</p>
 
-<kbd>
-    <img width="250" src="./screenshots/dropsy_demo.gif" alt="demo">
-</kbd>
+<p align="center">
+<a href="https://android-arsenal.com/api?level=15"><img alt="API" src="https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat"/></a>
+<a href="https://jitpack.io/#qandeelabbassi/Dropsy"><img alt="Jitpack" src="https://jitpack.io/v/qandeelabbassi/Dropsy.svg"/></a>
+</p>
+
+<p align="center">
+<kbd> <img width="250" src="./screenshots/dropsy_demo.gif" alt="demo"> </kbd>
+</p>
 
 ## Gradle
 Add it in your top-level `build.gradle`:
