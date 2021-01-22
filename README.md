@@ -52,6 +52,6 @@ btn_show.setOnClickListener { dropdown_fruits.showDropdown() }
 btn_hide.setOnClickListener { dropdown_fruits.hideDropdown() }
 ```
 
-## Sample App Screenshot:
+## Sample App Screenshot
 
 <img src="./screenshots/sample_app.png" width="250">
