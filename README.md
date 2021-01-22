@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         // set listener
-        findViewById<DropDownView>(R.id.dropdown_fruits).setItemClickListener { i, item ->
+        dropdown_fruits.setItemClickListener { i, item ->
             Toast.makeText(this, "${item.text} clicked at index $i", Toast.LENGTH_SHORT).show()
         }
     }
