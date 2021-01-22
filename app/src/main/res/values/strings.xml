@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Dropsy</string>
     <string name="dropdown_label">Fruit:</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
     <string-array name="dropdown_items">
         <item>Apple</item>
         <item>Mango</item>

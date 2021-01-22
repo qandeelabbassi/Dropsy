@@ -8,14 +8,36 @@
     tools:context=".MainActivity">
 
     <com.qandeelabbassi.dropsy.DropDownView
+        android:id="@+id/dropdown_fruits"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        app:dropsyElevation="@dimen/drop_down_elevation"
+        app:dropsyItems="@array/dropdown_items"
+        app:dropsyLabel="@string/dropdown_label"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:dropsyItems="@array/dropdown_items"
-        app:dropsyLabel="@string/dropdown_label"
-        app:dropsyElevation="@dimen/drop_down_elevation"/>
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dropsy_white_space_margin"
+        android:text="@string/show"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hide"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dropsy_white_space_margin"
+        android:text="@string/hide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_show" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

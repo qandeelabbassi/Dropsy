@@ -26,6 +26,11 @@ class DropDownView @JvmOverloads constructor(
 ) : MaterialCardView(context, attrs, defStyleAttr),
         OnMenuItemClickListener<DropDownItem>, OnDismissedListener, View.OnClickListener {
 
+    fun interface ItemClickListener {
+        fun onItemClick(position: Int, item: DropDownItem)
+    }
+
+    private var listener: ItemClickListener? = null
     private lateinit var dropDownItems: List<DropDownItem>
     private val dropDownAdapter = DropDownAdapter()
     private val dropDownPopup: CustomPowerMenu<DropDownItem?, DropDownAdapter?> by lazy {
@@ -98,15 +103,16 @@ class DropDownView @JvmOverloads constructor(
 
     override fun onClick(v: View?) {
         if (isSelected)
-            dismiss()
+            hideDropdown()
         else
-            showDropDown()
+            showDropdown()
     }
 
-    override fun onItemClick(position: Int, item: DropDownItem?) {
-        txt_drop_drown_value.text = item?.text
+    override fun onItemClick(position: Int, item: DropDownItem) {
+        txt_drop_drown_value.text = item.text
         dropDownAdapter.setSelection(position, item)
-        dismiss()
+        listener?.onItemClick(position, item)
+        hideDropdown()
     }
 
     override fun onDismissed() {
@@ -114,16 +120,22 @@ class DropDownView @JvmOverloads constructor(
         animateCollapse()
     }
 
-    fun showDropDown() {
-        isSelected = true
-        dropDownPopup.showAsDropDown(this)
-        animateExpand()
+    fun showDropdown() {
+        post{
+            isSelected = true
+            dropDownPopup.showAsDropDown(this)
+            animateExpand()
+        }
     }
 
-    fun dismiss() {
+    fun hideDropdown() {
         postDelayed({
             dropDownPopup.dismiss()
         }, 150)
+    }
+
+    fun setItemClickListener(listener: ItemClickListener) {
+        this.listener = listener
     }
 
     private fun animateExpand() {
