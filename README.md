@@ -8,13 +8,15 @@ Simple dropdown/spinner view for Android
 </p>
 
 <p align="center">
-<a href="https://android-arsenal.com/api?level=15"><img alt="API" src="https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat"/></a>
 <a href="https://jitpack.io/#qandeelabbassi/Dropsy"><img alt="Jitpack" src="https://jitpack.io/v/qandeelabbassi/Dropsy.svg"/></a>
+<a href="https://android-arsenal.com/api?level=19"><img alt="API" src="https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat"/></a>
+<a href="https://opensource.org/licenses/MIT"><img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
 </p>
 
 <p align="center">
 <kbd> <img width="250" src="./screenshots/dropsy_demo.gif" alt="demo"> </kbd>
 </p>
+</br>
 
 ## Gradle
 Add it in your top-level `build.gradle`:
