@@ -1,9 +1,11 @@
-<img align="left" width="45" height="45" src="./app/src/main/ic_launcher-playstore.png" alt="icon">
+<img width="45" height="45" src="./app/src/main/ic_launcher-playstore.png" alt="icon">
 
 # Dropsy
 Simple dropdown/spinner view for Android.
 
-<img width="250" src="./screenshots/dropsy_demo.gif" alt="demo">
+<kbd>
+    <img width="250" src="./screenshots/dropsy_demo.gif" alt="demo">
+</kbd>
 
 ## Usage
 :point_right: Add the Dropsy's `DropDownView` view in XML layout like this:
