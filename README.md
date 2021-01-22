@@ -1,11 +1,26 @@
 <img width="45" height="45" src="./app/src/main/ic_launcher-playstore.png" alt="icon">
 
-# Dropsy
+# Dropsy [![](https://jitpack.io/v/qandeelabbassi/Dropsy.svg)](https://jitpack.io/#qandeelabbassi/Dropsy)
 Simple dropdown/spinner view for Android.
 
 <kbd>
     <img width="250" src="./screenshots/dropsy_demo.gif" alt="demo">
 </kbd>
+
+## Gradle
+Add it in your top-level `build.gradle`:
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+Add the dependency to app-level `build.gradle`:
+```
+implementation 'com.github.qandeelabbassi:Dropsy:1.0'
+```
 
 ## Usage
 :point_right: Add the Dropsy's `DropDownView` view in XML layout like this:
