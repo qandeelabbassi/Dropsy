@@ -1,6 +1,7 @@
 package com.qandeelabbassi.dropsy
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,11 @@ import com.skydoves.powermenu.MenuBaseAdapter
 class DropDownAdapter internal constructor() :
     MenuBaseAdapter<DropDownItem?>() {
     private var selectedIndex = -1
+    private var textColor: Int? = null
+
+    internal fun setTextColor(color: Int) {
+        this.textColor = color
+    }
 
     override fun getView(index: Int, v: View?, viewGroup: ViewGroup): View {
         var view: View? = v
@@ -27,6 +33,8 @@ class DropDownAdapter internal constructor() :
         //val imgCheck = view?.findViewById<ImageView>(R.id.img_check)
 
         txtLabel?.text = item.text
+        textColor?.let { txtLabel?.setTextColor(it) }
+
         if (item.checked)
             txtLabel?.applyCustomFont(context, "roboto_bold")
         else

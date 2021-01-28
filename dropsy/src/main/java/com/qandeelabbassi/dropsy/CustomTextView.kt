@@ -20,10 +20,10 @@ class CustomTextView @JvmOverloads constructor(
     init {
         val a = context.theme.obtainStyledAttributes(
             attrs,
-            R.styleable.Dropsy,
+            R.styleable.CustomTextView,
             0, 0
         )
-        val fontType = fonts[a.getInteger(R.styleable.Dropsy_dropsyFontType, 0)]
+        val fontType = fonts[a.getInteger(R.styleable.CustomTextView_dropsyFontType, 0)]
         a.recycle()
         applyCustomFont(context, fontType)
     }

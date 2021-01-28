@@ -14,9 +14,12 @@ Simple dropdown/spinner view for Android.
     android:id="@+id/dropdown_fruits"
     android:layout_width="250dp"
     android:layout_height="wrap_content"
+    app:dropsyElevation="@dimen/drop_down_elevation"
     app:dropsyItems="@array/dropdown_items"
     app:dropsyLabel="@string/dropdown_label"
-    app:dropsyElevation="@dimen/drop_down_elevation"/>
+    app:dropsySelector="@color/dropsy_selector"
+    app:dropsyLabelColor="@color/dropsy_text_color_secondary"
+    app:dropsyValueColor="@color/dropsy_text_color" />
 ```
 :point_right: Set a listener on the `DropDownView` in your Activity/Fragment like this:
 ```kotlin

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="Dropsy">
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="DropDownView" tools:ignore="ResourceName">
+        <attr name="dropsyItems" format="integer" />
+        <attr name="dropsyElevation" format="dimension" />
+        <attr name="dropsyLabel" format="string" />
+        <attr name="dropsyLabelColor" format="color" />
+        <attr name="dropsyValueColor" format="color" />
+        <attr name="dropsySelector" format="color" />
+        <attr name="dropsyBorderSelector" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView" tools:ignore="ResourceName">
         <attr name="dropsyFontType" format="string">
             <enum name="roboto_regular" value="0" />
             <enum name="roboto_thin" value="1" />
@@ -9,9 +19,5 @@
             <enum name="roboto_bold" value="4" />
             <enum name="roboto_black" value="5" />
         </attr>
-
-        <attr name="dropsyItems" format="integer"/>
-        <attr name="dropsyElevation" format="dimension"/>
-        <attr name="dropsyLabel" format="string"/>
     </declare-styleable>
 </resources>
