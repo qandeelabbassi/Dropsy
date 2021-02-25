@@ -30,7 +30,7 @@ allprojects {
 ```
 Add the dependency to app-level `build.gradle`:
 ```
-implementation 'com.github.qandeelabbassi:Dropsy:1.0'
+implementation 'com.github.qandeelabbassi:Dropsy:1.1'
 ```
 
 ## Usage
